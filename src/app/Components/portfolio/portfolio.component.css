@@ -1,0 +1,135 @@
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+  margin-top: 12px;
+}
+
+section {
+  min-height: 40vh;
+  padding: 10rem 9% 2rem;
+  background: linear-gradient(to right, #8a8cab, #c08dab, #f86d75, #fead8a);
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Portfolio Section */
+.portfolio .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 20px;
+}
+
+.portfolio .card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio .card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.portfolio .card-body {
+  padding: 20px;
+}
+
+.portfolio .card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.portfolio .card-text {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.portfolio .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.portfolio .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio .row {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio .row {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on extra small screens */
+  }
+}
+
+/* @media (max-width: 768px) {
+  .portfolio h2 {
+    margin-bottom: 3rem;
+  }
+
+  .portfolio {
+    grid-template-columns: repeat(2, 3fr);
+  }
+}
+
+@media (max-width: 617px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+ */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    /* Center the table vertically */
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: red;
+    }
+
+    table, td {
+        border: 1px solid;
+        font-family: 'Times New Roman', Times;
+        text-align: center;
+        font-size: 30px;
+        height: 80px;
+        width: 258px;
+        transition: background-color 0.3s;
+    }
+
+    /* When hovering over a cell, change the background color to the opposite */
+    td:hover {
+        filter: invert(100%);
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors Square</title>
+</head>
+<body>
+    <div class="content">
+        <table>
+            <tr>
+                <td bgcolor="RED">1</td>
+                <td bgcolor="ORANGE">2</td>
+                <td bgcolor="VIOLET">3</td>
+            </tr>
+            <tr>
+                <td bgcolor="YELLOW">4</td>
+                <td bgcolor="GREEN">5</td>
+                <td bgcolor="BLUE">6</td>
+            </tr>
+            <tr>
+                <td bgcolor="BLACK"><span style="color: WHITE">7</span></td>
+                <td bgcolor="WHITE">8</td>
+                <td bgcolor="CYAN">9</td>
+            </tr>
+        </table>
+    </div>
+    <div class="content">
+        <p>Activity in <strong>CSS</strong> by: <a href="https://www.facebook.com/QuelThalas007/">Franco Valenzuela</a></p>
+    </div>
+</body>
+</html>

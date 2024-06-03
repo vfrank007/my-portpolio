@@ -1,0 +1,143 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  min-height: 40vh;
+  padding: 10rem 9% 2rem;
+  background: linear-gradient(to right, #8a8cab, #c08dab, #f86d75, #fead8a);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about,
+.skills,
+.interests,
+.goals,
+.pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-img img {
+  width: 35vw;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.about-content ul {
+  list-style-type: none;
+}
+
+.about-content ul li {
+  font-size: 1.4rem; 
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3rem; 
+}
+
+.col-lg-6 {
+  flex: 0 0 calc(50% - 1rem);
+}
+
+.p2 {
+  margin-top: 3rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.container1 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.p2 {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.pictures .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pictures .row .col-lg-4 {
+  width: 100%; 
+  margin-bottom: 20px;
+}
+
+.pictures .row .col-lg-4 img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .pictures .row .col-lg-4 {
+    width: calc(50% - 10px); 
+  }
+}
+
+@media (min-width: 768px) {
+  .pictures .row .col-lg-4 {
+    width: calc(33.33% - 10px);
+  }
+}

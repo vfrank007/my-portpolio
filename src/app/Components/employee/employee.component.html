@@ -1,0 +1,69 @@
+<section class="employee" id="employee">
+  <h2 class="heading">Employee Management</h2>
+  <div class="employee-container">
+    <form (ngSubmit)="addOrUpdateEmployee()" #employeeForm="ngForm">
+      <div class="input-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" [(ngModel)]="newEmployeeLastName" name="lastName" required>
+      </div>
+      <div class="input-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" [(ngModel)]="newEmployeeFirstName" name="firstName" required>
+      </div>
+      <div class="input-group">
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" [(ngModel)]="newEmployeeMiddleName" name="middleName">
+      </div>
+      <div class="input-group">
+        <label for="position">Position:</label>
+        <input type="text" id="position" [(ngModel)]="newEmployeePosition" name="position" required>
+      </div>
+      <div class="input-group">
+        <label for="department">Department:</label>
+        <input type="text" id="department" [(ngModel)]="newEmployeeDepartment" name="department" required>
+      </div>
+      <div class="input-group">
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" [(ngModel)]="newEmployeeSalary" name="salary" required>
+      </div>
+      <div class="button-group">
+        <button type="submit" class="submit-button">
+          {{ editingIndex !== null ? 'Update Employee' : 'Add Employee' }}
+        </button>
+        <button type="button" class="cancel-button" (click)="resetForm()">Clear</button>
+        <button type="button" class="clear-storage-button" (click)="clearLocalStorage()">Clear Local Storage</button>
+      </div>
+    </form>
+    <div class="table-responsive">
+      <table id="employeeTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Position</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees; let i = index">
+            <td>{{ employee.id }}</td>
+            <td>{{ employee.lastName }}</td>
+            <td>{{ employee.firstName }}</td>
+            <td>{{ employee.middleName }}</td>
+            <td>{{ employee.position }}</td>
+            <td>{{ employee.department }}</td>
+            <td>${{ employee.salary }}</td>
+            <td>
+              <button class="edit-button" (click)="editEmployee(i)"><i class="fa fa-edit"></i></button>
+              <button class="delete-button" (click)="deleteEmployee(i)"><i class="fa fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

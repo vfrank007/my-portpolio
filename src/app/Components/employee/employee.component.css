@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  min-height: 90vh;
+  padding: 10rem 9% 2rem;
+  background: linear-gradient(to right, #8a8cab, #c08dab, #f86d75, #fead8a);
+}
+
+.employee h2{
+  margin-bottom: 5rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.employee-container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.button-group {
+  text-align: center;
+}
+
+.submit-button,
+.cancel-button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.submit-button {
+  background-color: #007bff;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-button {
+  background-color: #007bff;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .employee-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .employee-container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .employee-container {
+    padding: 15px;
+  }
+
+  .submit-button,
+  .cancel-button {
+    padding: 8px 12px;
+  }
+
+  button {
+    padding: 4px 8px;
+    margin: 0 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .employee-container {
+    padding: 10px;
+  }
+
+  .input-group input {
+    padding: 6px;
+  }
+
+  .submit-button,
+  .cancel-button {
+    padding: 6px 10px;
+  }
+
+  button {
+    padding: 3px 6px;
+    margin: 0 2px;
+  }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <a>
+        <style>
+            body {
+                background-image: url('tumblr_b10633e132975d5fee1cf7f955e67ca2_a7240ea7_1280.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+        <header class="navbar-light navbar-sticky header-static navbar-sticky-on">
+            <div class="panel panel-default">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container"><a class="navbar-brand" href="https://www.sti.edu/">
+                            <style>
+                                table.center {
+                                    height: 100%;
+                                    width: 100%;
+                                    margin-left: auto;
+                                    margin-right: auto;
+
+                                }
+
+                                table:hover {
+                                    padding-top: 10px;
+                                    padding-bottom: 20px;
+                                    padding-left: 30px;
+                                    padding-right: 20px;
+                                    height: 100%;
+                                    width: 100%;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    text-align: left;
+                                    border: 3px solid #73AD21;
+                                    transition-duration: 0.4s;
+
+                                }
+
+                                input[type=text]:hover,
+                                input[type=radio]:hover {
+                                    cursor: pointer;
+
+                                }
+
+                                select[name=admittype]:hover,
+                                select[name=please_select_year_level]:hover,
+                                select[name=please_select_school_year]:hover,
+                                select[name=please_select_term]:hover {
+                                    cursor: pointer;
+
+                                }
+
+                                input[type=reset],
+                                input[type=submit] {
+
+                                    background-color: #04AA6D;
+                                    border: none;
+                                    color: white;
+                                    padding: 16px 32px;
+                                    text-decoration: none;
+                                    margin: 4px 2px;
+                                    transition-duration: 0.4s;
+                                    cursor: pointer;
+
+                                }
+
+                                input[type=submit]:hover {
+                                    background-color: white;
+                                    color: black;
+                                    border: 2px solid #4CAF50;
+
+                                }
+
+                                input[type=reset]:hover {
+                                    background-color: white;
+                                    color: black;
+                                    border: 2px solid #008CBA;
+
+                                }
+                            </style>
+                            <img class="" src="https://www.sti.edu/images/stilogo3.png" alt="logo">
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+    </a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>02 Laboratory Exercise 1</title>
+</head>
+
+<body>
+
+    <div class="center">
+        <center>
+            <img src="omnibus.jpg" alt="STI College" width="1349px" height="600px">
+        </center>
+    </div>
+
+    <br>
+    <br>
+
+    <form action="">
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h1><span style="color: black">Required fields</span><span style="color: red">*</span></h1>
+                    <table class="center">
+                        <tr>
+                            <th>
+                                <label for="admit_type">Admit Type:<span style="color:red;">*</span></label>
+                                <select name="admittype" id="Admit Type">
+                                    <option value="admittype">Admit Type</option>
+                                    <option value="new student">New Student</option>
+                                    <option value="old student">Old Student</option>
+                                </select>
+                            </th>
+                            <th>
+                                <label for="please_select_year_level">Year level:<span
+                                        style="color:red;">*</span></label>
+                                <select name="please_select_year_level" id="please_select_year_level">
+                                    <option value="please select year level">Please select year level</option>
+                                    <option value="first year">First Year</option>
+                                    <option value="second year">Second Year</option>
+                                    <option value="third year">Third Year</option>
+                                    <option value="fourth year">Fourth Year</option>
+                                </select>
+                            </th>
+                            <th>
+                                <label for="please_select_school_year">School Year:<span
+                                        style="color:red;">*</span></label>
+                                <select name="please_select_school_year" id="please_select_school_year">
+                                    <option value="1school year">Please select school year</option>
+                                    <option value="2school year">2022-2023</option>
+                                    <option value="3school year">2023-2024</option>
+                                </select>
+                            </th>
+                            <th>
+                                </select>
+                            </th>
+                            <th>
+                                <label for="please_select_term">Term:<span style="color:red;">*</span></label>
+                                <select name="please_select_term" id="please_select_term">
+                                    <option value="please_select_term">Please select term</option>
+                                    <option value="1 Term">1st Term</option>
+                                    <option value="2 Term">2nd Term</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h1><span style="color: black">Student Information</span></h1>
+                    <table class="center">
+                        <tr>
+                            <th><label for="Fname">First Name:<span style="color:red;">*</span></label></th>
+                            <th><label for="Mname">Middle Name:</label></th>
+                            <th><label for="Lname">Last Name:<span style="color:red;">*</span></label></th>
+                            <th><label for="Sname">Suffix Name:</label></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="Fname" placeholder="Given Name" size="34" /></td>
+                            <td><input type="text" id="Mname" placeholder="Middle Name" size="34" /></td>
+                            <td><input type="text" id="Lname" placeholder="Last Name" size="34" /></td>
+                            <td><input type="text" id="Sname" placeholder="(e.g. Jr.)" size="34" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="birthplace">Birthplace:<span style="color:red;">*</span></label></th>
+                            <th><label for="religion">Religion <span style="color: red">*</span></label></th>
+                            <th><label for="citizenship">Citizenship: <span style="color: red">*</span></label></th>
+                            <th><label for="DateOfBirth">Date of Birth: <span style="color: red">*</span></label></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="birthplace" placeholder="Birthplace" size="34" /></td>
+                            <td><input type="text" id="religion" placeholder="Religion" size="34" /></td>
+                            <td><input type="text" id="citizenship:" placeholder="Citizenship" size="34" /></td>
+                            <td><input type="text" id="DateOfBirth" placeholder="mm/dd/yyy" size="34" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="gender">Gender: <span style="color: red">*</span></label></th>
+                            <td><input type="radio" id="male" name="Gender" value="Male"><label for="male">Male</label>
+                            </td>
+                            <td><input type="radio" id="female" name="Gender" value="Female"><label
+                                    for="female">Female</label></td>
+                            <td><input type="radio" id="others" name="Gender" value="Others"><label
+                                    for="others">Others</label></td>
+                        </tr>
+                        <tr>
+                            <th><label for="status">Status: <span style="color: red">*</span></label></th>
+                            <td><input type="radio" id="single" name="status" value="Single"><label
+                                    for="single">Single</label></td>
+                            <td><input type="radio" id="married" name="status" value="Married"><label
+                                    for="married">Married</label></td>
+                        </tr>
+                    </table>
+                    <center>
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </center>
+                </div>
+            </div>
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <div>
+        <center>
+            <video width="1218" height="730" poster="Thumbnail.png" controls style="width: 1218px !important; height: 730px !important;">
+                <source src="Enrollment.mp4" type="video/mp4">
+            </video>
+        </center>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

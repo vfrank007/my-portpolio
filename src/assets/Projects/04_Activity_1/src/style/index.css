@@ -1,0 +1,36 @@
+body {
+    background-color: wheat;
+    margin-top: 60px;
+    margin-bottom: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 5px;
+    row-gap: 2px;
+}
+
+h1 {
+    border-top: inset;
+    border-bottom: inset;
+    border-left: inset;
+    border-right: inset;
+    border-color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: red;
+    
+}
+
+article {
+    background-color: aqua;
+    border-top: inset;
+    border-bottom: inset;
+    border-left: inset;
+    border-right: inset;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    border-color: black;
+}
